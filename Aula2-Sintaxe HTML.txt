@@ -1,0 +1,65 @@
+Sintaxe HTML
+	Tags
+		Tags são marcações que definem o tipo de conteúdo e informam ao navegador como este conteúdo deve ser apresentado na página. Elas delimitam o conteúdo, informam ao navegador que tipo de informação se trata (título, parágrafo, lista).
+		Toda tag possuí um nome (nome da marca) que dá designação ao elemento HTML.
+		Todo elemento visual que você identifica em uma página web, desde um texto, uma foto ou um vídeo, são inseridos através de tags.
+		
+		Seu formato (obrigatório estar entre '<' e '>'):
+		
+		<p>		=> 'p' é o nome da tag - tag de abertura
+		</p>	=> '/' é a barra de fechamento da tag - tag de fechamento
+		
+		Tudo que estiver contido entre uma tag de abertura e uma tag de fechamento representa o conteúdo, que será processado segundo o comando contido na tag.
+		
+		Para exemplificar, vamos usar o elemento HTML que marca parágrafos:
+		
+				<p> Meu primerio parágrafo </p>
+		
+		Basicamente o código para inserir um elemento HTML usa a seguinte lógica:
+		
+				<tag>Conteúdo a ser visualizado na página web</tag>
+		
+	REGRAS DAS TAGS
+		- Não podem ter espaços entre os sinais '<' e '>'
+		- Elas podem ser escritas em maiúsculo/minúsculo, mas as boas práticas usamos em minúsculo.
+		
+	ELEMENTOS NULOS (vazios ou void)
+		- Essas marcações só possuem tag de abertura. Elas tem um fechamento automático. 
+		- Não podem conter texto ou elementos aninhados dentro deles, pois não possuem tags de fechamento.
+		Por exemplo (input é uma tag de formulário):
+			<input/> texto				=> ERRADO
+			<input> texto </input>		=> ERRADO
+			<input/> 					=> CERTO
+		- Não é obrigatório o uso da '/', pode usar sem que também funciona (<tag/> == <tag>)
+	
+	LISTA DE TAGS NULAS
+		area			col				input			param
+		base			hr				link
+		br				img				meta
+		
+		Tags add por conta do HTML5
+		comand			keygen			source
+	
+	TAGS ENTRE TAGS
+		- Um elemento HTML pode conter outra tag entre suas tags, tantas quantas forem necessárias.
+		- Isso define uma hieraquia entre os elementos:
+			o elemento externo pode ser definido como elemento pai e o interno como elemento filho.
+			
+			<tag>					=> elemento pai
+				<outraTag>			=> elemento filho
+					Conteúdo
+				</outraTag>
+			</tag>
+	
+		- Podemos ter também um conteúdo antes da 'outraTag'.
+			
+			<ul>
+				<li>
+					<a href=""> Meu texto </a>
+				</li>
+			</ul>
+	
+	ANINHAMENTO
+		- Nós já sabemos que é comum existir elementos dentro de outros elementos.
+		- Isso é possível através de tags de um elemento que ficam entre as tags de abertura e de fechamento de outro elemento.
+		- Esse processo de inserir um elemento dentro de outro chamamos de "aninhamento".

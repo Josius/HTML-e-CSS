@@ -1,0 +1,48 @@
+Tags estruturais e árvore do documento
+	html, head, title e body
+		
+		<html>
+		</html>
+		
+	A tag acima é a raiz de todo e qualquer página HTML. É ele que dá início a estrutura, ele indica ao navegar que estamos iniciando um arquivo do tipo de marcação de hipertexto.
+	
+	O elemento "html" englobará todas as demais tags que formam um documento HTML. Entenda-se como documento HTML como o arquivo que será interpretado pelos navegadores para formar uma página web. Veja abaixo:
+		
+		<html>
+			<head>
+			</head>
+		</html>
+	
+	O elemento "head" está contido dentro do elemento "html". Eles são elementos filho e pai, respectivamente. 
+	
+	Vamos colocar o 3º elemento báscio que é o "title" e também o título da página:
+	
+		<html>
+			<head>
+				<title>Minha primeira página web</title>
+			</head>
+		</html>
+	
+	E por último, adicionamos um elemento de suma importância, o "body", o qual ficará todo o conteúdo. Ela fica entre as tags do elemento "html", mas sempre virá após a tag de fechamento do elemento "head".
+		
+		<html>
+			<head>
+				<title>Minha primeira página web</title>
+			</head>
+			<body>
+			</body>
+		</html>
+	
+	SIGNIFICADO DAS TAGS USADAS
+		<html></html>		=> delimitam o documento HTML. É a raiz do documento
+		<head></head>		=> delimitam o cabeçalho. É onde se encontra outros elementos do cabeçalho.
+		<title></title>		=> correspondem ao título que vemos na parte superior do navegador (barra de ferramentas). São tags contidas dentro do elemento "head" (<head></head>) e que dá o nome da página. Além disso, elas fornecem um título para a página quando ela é adicionada aos favoritos e para visualização nos resultados de buscas.
+		<body></body>		=> são responsáveis por mostrar todo conteúdo de uma página. É o "corpo da página". E é dentro delas que ficam outras tags específicas para inserção de conteúdo e de divisão de seções. Por exemplo, imagem, mídia, texto, links, seções divisões, formulários, etc..
+		
+	ÁRVORE DO DOCUMENTO
+		Para entender, usamos os elementos HTML que já conhecemos até o momento. Existem elementos HTML pai, filho, irmãos, ancestrais, descendentes, entre outros.
+		
+		- O elemento "html" é pai dos elementos "head" e "body".
+		- O elemento "title" é filho do elemento "head". E o inverso, "head" é pai de "title".
+		- Os elementos "html" e "head" são ancestrais de "title".
+		- O elemento "title" é descendente do elemento "html".	
