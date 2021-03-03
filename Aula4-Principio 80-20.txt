@@ -1,0 +1,19 @@
+Tags mais usadas em todos os HTMLs
+	Utilizando o princípio 80/20
+		A lei de Pareto nos diz que cerca de 80% dos resultados que obtemos estão relacionados com 20% dos nossos esforços. E o que isso quer dizer?
+		Quer dizer que, de todas as ações (100%) que você aplica em algo, 20% delas são responsáveis por 80% dos resultados.
+		Isso quer dizer também que 80% das ações (a grande maioria) que você se mata executando te leva para menor parte dos resultados.
+
+		Hoje em dia, uma página web é como se fosse um espelho digital de uma página de revista. Lógico que não em sua totalidade, o usuário é passivo diante de uma revista gráfica.
+		Eis os elementos visuais mais comuns de uma página de revista:
+			-Blocos
+			-Parágrafos
+			-Listas
+			-Imagens
+			-Títulos e subtítulos
+
+		Sabendo disso, nós podemos realizar os seguintes passos para começarmos a construir uma página web:
+			1º Ter conhecimento prévio sobre a síntaxe de tags HTML
+			2º Ter conhecimento prévio sobre as tags estruturais fundamentais
+			3º Saber quais as tags mais usadas em páginas web
+		O 1º e o 2º já vimos, basta agora o 3º.

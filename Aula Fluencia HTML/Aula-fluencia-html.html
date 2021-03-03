@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula de Fluência em HTML</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<div>
+			<h1>Título 01</h1>
+									
+			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<div>
+			<h2>Título 02</h2>
+			
+			<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<div>
+			<h3>Título 03</h3>
+			
+			<p><u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span style="text-decoration: underline; font-weight: bold; font-style: italic;">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+	</body>
+</html>
+
+<!--
+Aula 5 div
+	-div -> Tag de bloco básica, funciona como se fosse um container; poderemos ter outros elementos aninhados dentro dela ou até mesmo outras divs; ela é genêrica pois não passa nenhum significado ao navegador, usada para estruturar e organizar
+
+Aula 6 meta charset, tags P, h1 até h6
+	-metatag: meta charset="utf-8" -> O charset UTF-8 é o que usamos na web atual e faz parte de um padrão chamado Unicode. A ideia é que com ele possamos representar qualquer caractere de qualquer idioma. Ao usar o charset dentro da tag meta de nosso arquivo estamos dizendo ao navegador: quando for ler esse arquivo, use as regras do charset UTF-8.
+	
+	-tags de títulos: h1 até h6 -> São tags de títulos que formatam o texto entre essas tags para as características respectivas de cada hn. O h vem de head (cabeçalho) de editoriais e jornais. O 1º (h1) é o mais importante, e o último (h6) é o menos importante. Em páginas web, geralmente vamos até o h4.
+	Geralmente utilizamos o h1 para o título principal da página, o h2 para subtítulos internos e o h3 para o subtítulo.
+	
+	-tag de parágrafo: <p></p> ->  Usada para texto corrido, com sentenças, orações, frases, etc..
+
+Aula 7 tags strong, span e em
+	Quando queremos dar uma importância, uma ênfase, um destaque para determinados trechos do texto e esse destaque não seja somente uma mudança de cor ou tamanho por questões estéticas, mas por questões de significado mais importante, usamos certas tags específicas.
+	
+	-tag de negrito: <strong></strong> -> Com essa tag, além de deixarmos o texto em negrito, também passamos para o navegador que o texto com essa tag possuí um significado. Se quisermos só deixar o texto em negrito por questões estéticas usamos o CSS. Também há a tag <b>bold</b>, mas esta entrou em desuso, pois não passa um significado para o navegador.
+	
+	-tag de ênfase: <em></em> -> Deixa o texto em itálico além de passar uma ênfase ao navegador, um significado para ele. Usamos em citações, trechos de outros textos de outros autores, trechos de outras línguas, gírias. Também há a tag <i>italic</i>, mas esta entrou em desuso, pois não passa um significado para o navegador.
+	
+	-tag de sublinhado: <u></u> -> Deixa o texto sublinhado. Usar ela somente quando houver alguma parte errada no texto, como erros ortográficos, porém ela é pouco utilizada. 
+	
+	-tag de sublinhado com estética: <span></span> -> Esta tag não passa nenhuma semântica, nenhum significado, assim como a div; entretanto ela trabalha em linha, diferente da div que é em bloco. Ela é usada estética e visualmente em trechos do texto. Porém, a span por padrão não modifica nada, precisamos do CSS. 
+	Por exemplo: <span style="font-weight: bold;"></span> 
+				ou 
+				<span style="text-decoration: underline;"></span> 
+				ou 
+				<span style="font-style: italic;"></span>
+				OU podemos usar tudo junto
+				<span style="text-decoration: underline; font-weight: bold; font-style: italic;"></span>.
+
+Aula 8
+-->
