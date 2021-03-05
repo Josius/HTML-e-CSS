@@ -9,19 +9,37 @@
 		<div>
 			<h1>Título 01</h1>
 									
-			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<ol>
+				<li>Item 01</li>
+				<li>Item 02</li>
+				<li>Item 03</li>
+				<li>Item 04</li>
+			</ol>
 		</div>
 		
 		<div>
 			<h2>Título 02</h2>
 			
 			<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<ul>
+				<li>Item 01</li>
+				<li>Item 02</li>
+				<li>Item 03</li>
+				<li>Item 04</li>
+				<li>Item 05</li>
+			</ul>
 		</div>
 		
 		<div>
 			<h3>Título 03</h3>
 			
 			<p><u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span style="text-decoration: underline; font-weight: bold; font-style: italic;">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<img src="image/sw.png" title="Star Wars" alt="Imagem ilustrativa da logo de Star Wars">
+			
 		</div>
 		
 	</body>
@@ -57,5 +75,19 @@ Aula 7 tags strong, span e em
 				OU podemos usar tudo junto
 				<span style="text-decoration: underline; font-weight: bold; font-style: italic;"></span>.
 
-Aula 8
+Aula 8 tags br, ol, ul, li, img
+	-tag de quebra de linha: <br> -> Utilizada somente para isso e em casos específicos, como endereços, poemas (ver w3c), ou seja, quando queremos dar um espaço mas o texto continua no mesmo parágrafo. Não usar para dar um espaço, como usar '<br><br>' para deixar uma linha de espaço entre dois/duas parágrafos/sentenças. Neste caso, fechamos o parágrafo anterior e abrimos um novo parágrafo.
+	
+	-tags de lista ordenada: <ol> e <li> -> <ol> indica que vamos usar uma lista ordenada e <li> indicamos o item da lista ordenada. Não é muito utilizada para criar sites.
+	
+	-tags de lista não ordenada: <ul> e <li> -> <ul> indica que vamos usar uma lista não ordenada e <li> indicamos o item da lista não ordenada. Mais usada para criação de sites, pois é utilizada na função de criar menus.
+	
+	-tag de imagem: <img src=""> -> A tag de imagem possuí fechamento próprio, 'src' é o caminho/local onde a imagem se encontra; se estivermos trabalhando em um servidor, colocaremos o caminho absoluto (local onde está a imagem no servidor); se estivermos trabalhando localmente usamos o endereço local da imagem, que geralmente é o mesmo endereço da pasta com o arquivo html (como usado na div do título 3). 
+		
+		-atributo de imagem (title): <img src="" title="texto descritivo"> -> Na imagem ainda podemos inserir alguns atributos como 'title', que é um texto que aparece ao deixarmos o mouse em cima da imagem. Este atributo 'title' é usado bastante em links, nas imagens não utilizamos muito, porque há um outro atributo que pode executar essa função.
+		
+		-atributo de imagem (alt): <img src="" alt="texto descritivo"> -> Em certos navegadores é interpretada como 'title', Serve para descrever a imagem, pois com 'alt' uma pessoa cega pode acessar o site e com o descritor de tela, ela saberá que há esta imagem. O ideal é que seja um texto simples e que passe o significado da imagem. Artigos que contenham esta tag são melhores indexados pelo google.
+		
+		-atributo de largura/altura (width/height): <img src="" width="largura" height="altura"> -> Se não for especificado nenhum valor, o navegador interpretará o tamanho real da imagem (em pixels). O ideal é exportar a imagem no tamanho correto.
+Aula 9	
 -->
