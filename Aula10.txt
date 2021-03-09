@@ -1,0 +1,17 @@
+Diferenças entre HTML5 e XHTML
+	links para verificar:
+		developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5
+		w3.org/html/logo/
+
+	Em xhtml precisava de 3 tipos de doctype, agora só precisamos de um:
+		<!DOCTYPE html>
+	
+	META TAGS
+		Meta tags são tags de dados. São tags que fornecem informações (metadados) sobre o documento HTML. As tags <meta> não serão exibidos na página para o usuário.
+		Elas são tags específicas para os robôs dos navegadores e buscadores (Google, por exemplo).
+		As meta tags são usadas para especificar a descrição da página, palavras-chaves, autor do documento, data da última modificação, entre outros. Elas sempre devem estar dentro da tag <head> do documento HTML.
+		Inserimos a metatag na head e os buscadores a localizam.
+		Por exemplo:
+		<meta charset="UTF-8">
+		
+		

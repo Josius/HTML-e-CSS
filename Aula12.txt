@@ -1,0 +1,37 @@
+O que é CSS?
+	INTRODUÇÃO
+		CSS é uma linguagem de estilos que define o layout de documentos escritos com linguagem de marcação, no caso o nosso HTML. Ele adiciona um estilo a uma página e altera a forma visual de como ela é apresentada. 
+		
+		CSS = Cascading Style Sheets ou Folha de Estilos em Cascata
+		
+		Com CSS temos:
+			-controle de layout de vários documentos a partir de uma simples folha de estilos;
+			-controle preciso do layout;
+			-aplicação de diferentes layouts para diferentes mídias (tela, impressora, celular, etc.);
+			-avançadas técnias de desenvolvimento;
+			-separa a estrutura do design - agilidade e performance;
+		
+		O CSS é o responsável pelo visual de um site. Através dele aplicamos as cores, determinamos os tamanhos, os pesos (no caso de fontes), bordas, imagens, etc. Com isso, separa-se a linguagem de marcação (HTML) da camada de apresentação (estética, design) do site.
+		
+		E essa alteração aparecerá em todo o site. E isso independentemente se o meu site tem 1 ou 100 documentos HTML.
+		
+	O QUE É O EFEITO CASCATA DO CSS?
+		O CSS usa o efeito cascata.
+		
+		"Efeito cascata é o método pelo qual é aplicada uma regra CSS em função do peso (importância, prioridade) da regra CSS. Quando a um elemento HTML aplica-se mais de uma regra CSS, diz-se que há um conflito de regras e será aplicada aquela que tiver maior peso (importância, prioridade) determinada pela ordem do efeito cascata.
+		
+		E a ordem do efeito cascata do CSS é:
+		
+			HERANÇA, ESPECIFICIDADE E IMPORTÂNCIA
+	
+	HERANÇA
+		
+		O CSS tem esse sistema, portanto os elementos filhos herdam as declarações do elemento pai, simples assim. Por padrão ele já herda os estilos dos elementos pai, mas caso isso não ocorra e você queira forçar, você pode usar o valor "inherit" no css.
+		
+	ESPECIFICIDADE
+		
+		É quando você diz ao CSS qual elemento você quer que ele formate. Você faz isso através do seletor. O seletor seria a identificação de um elemento HTML. Iremos ver mais a frente como funcionam os seletores.
+	
+	IMPORTÂNCIA
+		
+		A importância é uma exceção da regra. Usamos a declaração "!important" para aplicá-la. Essa declaração torna a especificidade do elemento que a contém maior do que qualquer declaração dentro do CSS.

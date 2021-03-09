@@ -1,0 +1,34 @@
+Definição das principais tags do HTML5
+
+	SECTION
+		A section representa uma seção comum de um documento. Serve para agrupar conteúdos do documento e de acordo com o tema.
+Mas cuidado, ele tem valor semântico, logo se pretendes usar um contêiner, ou bloco de conteúdo genérico e/ou só para estilização, use a tag div, que não possuí valor semântico.
+	
+	ARTICLE
+		O elemento article é semelhante a section, entretanto ele tem significado mais específico para conteúdo. ele funciona para marcar um conteúdo do tipo artigo de um blog ou uma matéria de jornal.
+O article indica que um determinado bloco contém informações/conteúdo importante.
+Uma forma de saber se devemos ou não usar e, que muitos indicam, é se perguntar: esse conteúdo é apropriado para se publicar em um feed RSS?
+	
+	HEADER
+		O header serve para agrupar o cabeçalho de uma seção. Tudo que componha um cabeçalho pode ser agrupado por ele: navegação, títulos e subtítulos, ajudas introdutórias, sumário de seção, formulário de pesquisa, logotipo que fica no topo do site, etc.
+Podem existir vários 'header' dentro de uma página e também dentro de outros elementos. Por exemplo: o header principal que agrupa os elementos do topo do site (logotipo, navegação, etc), um header de uma section (com um 'breadcrumb' e botões de compartilhamento para redes sociais).
+
+	NAV
+		A nav serve para a navegação. Ela é usada para os principais blocos de navegação do site, seja a condução dentro de seções da própria página ou para navegação que nos levas a outras páginas.
+Quando colocamos a navegação do nosso site dentro da tag<nav>, dizemos aos leitores de tela, para deficientes visuais, e robôs do Google que essa é uma navegação importante do site.
+
+	ASIDE
+		A tag <aside> serve para conter conteúdos relacionados ao conteúdo principal, por exemplo: barras laterais, citações destacadas, propagandas, links de navegação para redes sociais, enfim, qualquer conteúdo que possa ser entendido como à parte do conteúdo principal da página.
+Basicamente um conteúdo que se você tirar da página não prejudicará o sentido do conteúdo principal.
+
+	FOOTER
+		O elemento footer é o rodapé (apesar de não precisarem necessariamente estar no final da página ou de um artigo, mas normalmente estão).
+Ele serve para agrupar conteúdos que normalmente colocamos no rodapé, como por exemplo, informações de direitos autorais, dados de quem escreveu o conteúdo, links para documentos relacionados, etc.
+Assim como o header, podemos ter mais de um footer numa mesmoa página e dentro de outros elementos.
+
+	DIFERENÇA ENTRE SECTION E ARTICLE
+		Existe certa confusão sobre quando usar article ou section e vice versa.
+O importante é ter em mente que section serve para as separamos as seções do documento.
+Usa-se a section para dividir o conteúdo em diferentes sessões e ele pode conter ou até mesmo estar dentro de um article, de outras tags e até mesmo de outro section.
+Já a tag article serve para o conteúdo principal do seu site. Usa-se article para o conteúdo mais relevante do documento. É o que o seu leitor entrou para ler e que ele gostaria de ter em seu feed. E um article também pode ser aninhado dentro de um section, dentro de outros elementos e até de outro igual.
+Lembre-se, section é mais genério e divide o conteúdo em seções enquanto que article é um elemento mais específico e que serve para colocar os principais conteúdos do documento.
