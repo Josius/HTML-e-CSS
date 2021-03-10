@@ -1,0 +1,100 @@
+Sintaxe do CSS. Como funciona o CSS?
+	SINTAXE
+		Uma regra CSS é composta por um seletor, uma propriedade e um valor. Logo, para criar uma declaração CSS, seguimos os seguintes passos:
+		
+		Apontamos o seletor;
+		
+			seletor{propriedade: valor}
+			
+		-Abrimos e fechamos chaves{};
+		-Dentro de chaves determinamos a propriedade e o valor;
+		-E caso precise aplicar mais de uma declaração (propriedade + valor) utilizamos ponto e vírgula (;) ao final da declaração (após o valor), para separá-las.
+		
+		seletor: é o elemento HTML identificado por seu nome, classe, ID, etc.; e para o qual a regra será aplicada (p, h1, form, .minhaclasse, :houver, etc.). O seletor funciona como se fosse um alvo. Eu aponto para o CSS qual tag ele aplicará o estilo que determinei, na regra CSS.
+		
+		propriedade: é a característica que será estilizada, de um elemento HTML, no CSS. Existem inúmeras propriedades CSS, por exemplo: font, color, background, etc.
+		
+		valor: é a aparência que será assumida pela propriedade CSS. Então, a propriedade define o que iremos estilizar enquanto que o valor define como ou quanto será estilizado.
+		
+		Exemplo: eu quero determinar que o tamanho de um subtítulo, do meu documento HTML, será 14px. A propriedade para mudar o tamanho da fonte é font-size e o valor da propriedade seria 14px. Com isso teríamos o seguinte resultado:
+		
+			h2{font-size: 14px;}
+		
+	TIPOS DE SELETORES
+		Para falar sobre este assunto vamos seguir o esquema 80/20 pois agora o que você precisa mesmo é de fluência do que uma lista imensa de seletores. Por isso focaremos nos tipos de seletores e propriedades mais usadas para que você consiga aplicar tranquilamente em um site.
+		Com 5 seletores que mostraremos você já será capaz de estilizar um site com tranquilidade. São eles:
+		-O seletor de tipo;
+		-O seletor de id;
+		-O seletor de classe;
+		-O seletor pseudo-classe para links com mouse sobre eles;
+		-O seletor universal;
+	
+	SELETOR DE TIPO
+		Usado para selecionar elementos HTML de um mesmo tipo. Usamos em exemplos anteriores com o elemento body e o h2.
+		É aplicado quando você quer estilizar todas as marcações de um elemento específico em todo um site independente de quantas vezes ele aparece. Por exemplo, se temos 10 parágrafos em um documento e uso o seletor de tipo para que o elemento "p" fique em negrito, todos os 10 parágrafos assim ficarão (isso se nenhum outro seletor específico sobreescrever a regra).
+		
+		p {font-size:12px;}
+		
+	SELETOR DE ID
+		Ele serve para selecionar um elemento HTML que tenha o atributo id nomeado com o nome do seletor. Na regra CSS o seletor id é identificado pelo símbolo # seguido pelo nome que você especificou (ou especificará) no atributo do elemento HTML.
+		Exemplo:
+		
+		HTML: 
+		<h2 id="um">Este título possuí 18 pixels de tamanho.</h2>
+		
+		CSS: 
+		#um {font-site:18px;}
+		
+		DETALHE IMPORTANTE: Cada id especificado é único e não deve existir repetição dentro de um mesmo documento HTML. Você pode repetir o atributo "id", porém com nomes diferentes.
+	
+	SELETOR DE CLASSE
+		Serve para selecionar um elemento HTML que tenha o atributo "class" nomeada com o nome do seletor. Na regra CSS o seletor class é identificado por um ponto (.) seguido pelo nome que você especificou (especificará) no atributo do elemento HTML. 
+		Ele pode ser aplicado em diversos elementos dentro de um mesmo documento HTML. 
+		Exemplo:
+		
+		HTML:
+		<h2 class="um">Este título possuí 18 pixels de tamanho,</h2>
+		<p class="um">Estou repetindo o mesmo id em um mesmo documento dentro deste parágrafo".</p>
+		
+		CSS:
+		.um{font-size:18px;}
+		
+	SELETOR DE TIPO "a" + pseudo-classe "hover"
+		O a:hover é usado em hiperlinks para aplicar um estilo quando o usuário passa o mouse sobre o elemento, como por exemplo, mudar a cor do texto do link. Você encontra este tipo de efeito em vários sites por aí.
+		Exemplo:
+		
+		HTML:
+		<a href="página-de-destino.html">Página de destino</a>
+		
+		CSS:
+		a{color:blue;}
+		a:hover{color:red;}
+		
+	No caso, o seletor a deixa o link azul. Mas quando se coloca o mouse sobre o link ele ficará vermelho. Assim que se retira o mouse ele volta a ficar azul.
+	Este efeito também acontecerá quando você preferir usar id ou class no lugar do seletor do tipo a. Veja:
+	
+		HTML usando atributo id:
+		<a href="pagina-de-destino.html"id="link_id">Página de destino</a>
+		
+		CSS:
+		#link_id{color:blue;}
+		#link_id:hover{color:red;}
+		
+		E HTML usando atributo class:
+		<a href="pagina-de-destino.html"class="link_class">Página de destino</a>
+		
+		CSS:
+		.link_class{color:blue;}
+		.link_class:hover{color:red;}
+	
+	SELETOR UNIVERSAL
+		Ele é representado pelo caractere * e se aplica a todos elementos de uma página. Ele é geralmente usado para resetar propriedades aplicadas automaticamente pelos navegadores. Cada navegador tem seu jeito próprio de aplicar seus padrões de estilos. Ao resetar esses estilos através do seletor universal, você zera qualquer estilo pré-definido e tem a liberdade de definir as regras CSS sem a interferência dos navegadores.
+		
+		Para você ter uma ideia existem duas propriedades CSS muito usadas e que já vem pré-definidas em alguns navegadores e que influenciam na aparência de certos elementos HTML. São elas as propriedades margin e padding (explicarei a utilização delas mais a frente). Para impedir que isso acontece basta aplicar a sintaxe a seguir atribuindo o valor zero nas duas propriedades:
+			
+			*{
+			margin:0
+			padding:0;
+			}
+		
+		Com isso todos elementos da página web terão propriedades resetadas deixando você livre para atribuir o valor que você bem entender para os elementos que queira aplicar essas propriedades.
