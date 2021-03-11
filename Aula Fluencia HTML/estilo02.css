@@ -1,0 +1,13 @@
+	div{
+		
+		background: #FF0000;
+		color: #FFF;
+
+	}
+	
+/*
+Aula 14 Vinculando o CSS ao documento
+	Para que o estilo seja aplicado em todas as páginas (no caso, Aula-fluencia-html e pagina02) precisamos somente colocar:
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	onde no href está o nome do arquivo em CSS.
+*/
