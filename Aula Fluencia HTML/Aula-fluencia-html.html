@@ -3,8 +3,9 @@
 	<head>
 		<title>Aula de Fluência em HTML</title>
 		<meta charset="utf-8">
-		
+<!--		
 		<link rel="stylesheet" type="text/css" href="estilo.css">
+-->
 <!--
 ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 
@@ -14,6 +15,20 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 
 		</style>
 -->
+
+<!--
+ESTILO USADO AULA 15
+-->
+		<style type="text/css" media="">
+
+			div{
+				background-color:#FF0000;
+				background-color: rgba(20%, 60%, 50%, 0.3);
+				background-color: hsla(120, 100%, 50%, 1);
+			}
+
+		</style>
+
 	</head>
 	<body>
 		
@@ -152,5 +167,19 @@ Aula 14 Vinculando o CSS ao documento
 	A opção mais usual de todas apresentadas é a tag link:
 			<link rel="stylesheet" type="text/css" href="">
 	
-Aula10 
+Aula15 Background
+	Em -tag style:
+		<style type="text/css" media="">
+
+			div{
+				
+				background-color:#FF0000;						-> A cada dois digitos temos uma cor (R-G-B)
+				
+				background-color: rgba(20%, 60%, 50%, 0.3);		-> A mesca coisa que acima, porém em porcentagem; o 'a' significa alfa e é voltado para a opacidade da página; ele varia de 0.1 até 1. Podemos usar também rgb ao invés de rgba.
+				
+				background-color: hsla(120, 100%, 50%, 1);		-> 'h' é tom, varia de 0 (vermelho) até 360 (vermelho); 's' saturação, varia de 0 a 100%; 'l' luminosidade, varia de 0 a 100%. NOTA: É AQUI QUE DEFINIMOS O BRANCO; 'a' alfa, varia de 0.1 a 1.
+			}
+
+		</style>
+	
 	-->
