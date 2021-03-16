@@ -17,16 +17,20 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 -->
 
 <!--
-ESTILO USADO AULA 15
+ESTILO USADO AULA 15-16
 -->
 		<style type="text/css" media="">
-
+			
+			/* Estilo da Home */
 			div{
-				background-color:#FF0000;
-				background-color: rgba(20%, 60%, 50%, 0.3);
-				background-color: hsla(120, 100%, 50%, 1);
+				
+				/* background: #FF0000 url(image/sw.png) no-repeat 50% 30px; */
+				font-family: Montserrat, Constantia, sans-serif;
+				font-size: 20px;
+				font-weight: ;
+				font-style: ;
+				font-variant: small-caps;
 			}
-
 		</style>
 
 	</head>
@@ -35,7 +39,7 @@ ESTILO USADO AULA 15
 		<div>
 			<h1 id="secao01">Título 01</h1>
 									
-			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <a href="https://www.youtube.com/watch?v=mMx7a47w6Ok&list=PLwgL9IEA0PxUjbhob9UMdpVq12sGrjgU6&index=11&t=6s" style="color=#FF0000; font-weight: bold;">link</a> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p><strong>LOREM IPSUM DOLOR SIT AMET</strong>, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <a href="https://www.youtube.com/watch?v=mMx7a47w6Ok&list=PLwgL9IEA0PxUjbhob9UMdpVq12sGrjgU6&index=11&t=6s" style="color=#FF0000; font-weight: bold;">link</a> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			
 			<ol>
 				<li><a href="pagina02.html" title="Clique aqui neste link" target="_blank">Item 01 de link</a></li>
@@ -172,12 +176,40 @@ Aula15 Background
 		<style type="text/css" media="">
 
 			div{
+Aula15 Background				
+				background-color:#FF0000;									-> A cada dois digitos temos uma cor (R-G-B)
 				
-				background-color:#FF0000;						-> A cada dois digitos temos uma cor (R-G-B)
+				background-color: rgba(20%, 60%, 50%, 0.3);					-> A mesca coisa que acima, porém em porcentagem; o 'a' significa alfa e é voltado para a opacidade da página; ele varia de 0.1 até 1. Podemos usar também rgb ao invés de rgba.
 				
-				background-color: rgba(20%, 60%, 50%, 0.3);		-> A mesca coisa que acima, porém em porcentagem; o 'a' significa alfa e é voltado para a opacidade da página; ele varia de 0.1 até 1. Podemos usar também rgb ao invés de rgba.
+				background-color: hsla(120, 100%, 50%, 1);					-> 'h' é tom, varia de 0 (vermelho) até 360 (vermelho); 's' saturação, varia de 0 a 100%; 'l' luminosidade, varia de 0 a 100%. NOTA: É AQUI QUE DEFINIMOS O BRANCO; 'a' alfa, varia de 0.1 a 1.
+		
+Aula16 Image, Position, Repeat, Abreviação
+				background-image: url(image/cor-azul.png); 					-> Adiciona uma imagem ao fundo usando o endereço do local onde se encontra a imagem
 				
-				background-color: hsla(120, 100%, 50%, 1);		-> 'h' é tom, varia de 0 (vermelho) até 360 (vermelho); 's' saturação, varia de 0 a 100%; 'l' luminosidade, varia de 0 a 100%. NOTA: É AQUI QUE DEFINIMOS O BRANCO; 'a' alfa, varia de 0.1 a 1.
+				background-repeat: repeat-x;								-> Repete a imagem no background completo (somente repeat); no eixo x (repeat-x); no eixo y (repeat-y); sem repetir (no-repeat)
+				
+				background-position: center center;							-> Posiciona a imagem na tela; precisa de dois parâmetros, o 1º pode ser entre left, right ou center, e o 2º pode ser top, bottom ou center. Neste dois parâmetros podemos usar valores específicos, tais como 50% ou 30px
+				
+				background: #FF0000 url(image/sw.png) no-repeat 50% 30px;	-> Com esta propriedade podemos colocar todos os valores que precisamos para organizar o fundo da página. 1º vem a cor (que pode ser também o nome da cor); 2º vem o url; 3º repetição, 4º posição
+
+Há vários outros para utilizar, tais como os abaixo:				
+
+				background-size: cover;										-> Faz um tipo de capa
+				background-attachment: fixed;								-> Fixa a imagem e ela não se mexe quando descemos a barra de rolagem
+
+Aula17 Font e Font-Family
+				font-family: Montserrat, Constantia, sans-serif;			-> Determina um tipo de família para a fonte. Procura no pc do usuário a(s) fonte(s) especificada(s), se não houver a 1ª fonte, procura a seguinte, que é uma fonte mais genérica e por fim a fonte inicial do pc do usuário. Sempre que a fonte possuir espaço no nome usar aspas duplas (como "Times New Roman" ou "Fira Code"). 
+				NOTA: Mas se acaso o usuário não possuir a fonte em seu pc, podemos usar a propriedade font-face. Nós colocamos a fonte no servidor e puxamos de lá a fonte e não do pc do usuário.
+				
+				font-size: 20px;											-> Podemos usar tamanhos relativos [%, rem, em (usados em design responsivos) large] e unidades fixas (px, pt, cm; mais usada é o px)
+				
+				font-weight: bold;											-> Diz respeito a espessura da fonte, podemos usar normal, bold, bolder, lighter ou um valor (100 até 900), indepente de qual usar, precisa verificar na própria fonte se ela dispõe dessas características.
+				NOTA: Em <strong> há um valor semântico, já em 'font-weight: bold' não há, é só uma aplicação de estilo no texto.
+				
+				font-style: ; 												-> normal, oblique (inclinação da fonte), italic (depende da fonte, pode ser só sobre inclinação ou tornar a fonte cursiva).
+				NOTA: <em> em html tem valor semântico, 'italic' em CSS não, é só uma aplicação de estilo no texto.
+				
+				font-variant: ; -> normal, small-caps (deixa o texto em caixa alta, entretanto com tamanho de caixa baixa)
 			}
 
 		</style>
