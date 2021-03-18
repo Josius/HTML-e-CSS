@@ -16,20 +16,25 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 		</style>
 -->
 
-<!--
-ESTILO USADO AULA 15-16
--->
 		<style type="text/css" media="">
 			
 			/* Estilo da Home */
 			div{
 				
 				/* background: #FF0000 url(image/sw.png) no-repeat 50% 30px; */
-				font-family: Montserrat, Constantia, sans-serif;
+				/*font-family: Constantia, Arial, sans-serif;
 				font-size: 20px;
 				font-weight: ;
 				font-style: ;
 				font-variant: small-caps;
+				line-height: 60px;
+				font: 20px Montserrat, Constantia, sans-serif;*/
+				font: bold italic  20px/60px Montserrat, Constantia, sans-serif;
+				color: #FF0000;
+				text-align: justify;
+				text-transform: capitalize;
+				text-decoration: underline line-through overline;
+				text-indent: 50px;
 			}
 		</style>
 
@@ -209,7 +214,22 @@ Aula17 Font e Font-Family
 				font-style: ; 												-> normal, oblique (inclinação da fonte), italic (depende da fonte, pode ser só sobre inclinação ou tornar a fonte cursiva).
 				NOTA: <em> em html tem valor semântico, 'italic' em CSS não, é só uma aplicação de estilo no texto.
 				
-				font-variant: ; -> normal, small-caps (deixa o texto em caixa alta, entretanto com tamanho de caixa baixa)
+				font-variant: ; 											-> normal, small-caps (deixa o texto em caixa alta, entretanto com tamanho de caixa baixa)
+				
+Aula18 Font, Color, Text-align, Text-transform, Text-decoration
+				line-height: 60 px;											-> Com esta propriedade podemos alterar o tamanho da linha; se não determinarmos nada, o padrão será conforme o tamanho da fonte (font-size); para resetar é só colocar a palavra normal; podemos usar tamanhos relativos [%, rem, em (usados em design responsivos) large] e unidades fixas (px, pt, cm; mais usada é o px)
+				
+				font: bold italic small-caps 20px/60px Montserrat, Constantia, sans-serif;		-> Com esta propriedade podemos colocar todos os valores que precisamos para organizar a fonte. Há uma ordem a seguir e um mínimo de 2 elementos para funcionar. 1º vem a espessura (font-weight); 2º vem o estilo (font-style); 3º variação da fonte (font-variant); 4º tamanho da fonte (font-size); 5º altura da linha (line-height); 6º família da fonte (font-family)
+				
+				color: #FF0000;												-> Cor da fonte do texto; pode ser em hexadecimal, rgb, hsl, nome da cor
+				
+				text-align: center;											-> Alinhamento de texto (left, center, right, justify)
+				
+				text-transform: uppercase;									-> Podemos transformar todo o texto em caixa alta, caixa baixa ou caixa alta a 1ª letra de cada palavra (uppercase, lowercase, capitalize, none); ocorre conflito com 'font-variant: small-caps'
+				
+				text-decoration: underline;									-> (line-through, underline, overline, none, entre outras) Em sequência ao que está em parênteses, risca uma linha no meio do texto, risca uma linha no topo do texto, risca uma linha embaixo. Podemos usa, duas ou todas as opções
+				
+				text-indent: 50px; 											-> Identação de texto; podemos usar tamanhos relativos [%, rem, em (usados em design responsivos) large] e unidades fixas (px, pt, cm; mais usada é o px). Nºs positivos add espaços à esquerda do texto, nºs negativos add espaços à direita
 			}
 
 		</style>
