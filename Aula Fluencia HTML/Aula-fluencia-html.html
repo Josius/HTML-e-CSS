@@ -22,19 +22,38 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 			div{
 				
 				/* background: #FF0000 url(image/sw.png) no-repeat 50% 30px; */
-				/*font-family: Constantia, Arial, sans-serif;
+				/*
+				font-family: Constantia, Arial, sans-serif;
 				font-size: 20px;
 				font-weight: ;
 				font-style: ;
 				font-variant: small-caps;
 				line-height: 60px;
-				font: 20px Montserrat, Constantia, sans-serif;*/
+				font: 20px Montserrat, Constantia, sans-serif;
+				*/
+/*
 				font: bold italic  20px/60px Montserrat, Constantia, sans-serif;
 				color: #FF0000;
 				text-align: justify;
 				text-transform: capitalize;
 				text-decoration: underline line-through overline;
 				text-indent: 50px;
+*/
+			}
+			
+			*{
+				font-size: 12px;
+				margin: 0;
+				padding: 0;
+			}
+			
+			#star-wars{
+				font-size: 60px;
+			}
+			
+			.estilo_texto01{
+				font-size: 40px;
+				color: #FF0000;
 			}
 		</style>
 
@@ -55,7 +74,7 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 		</div>
 		
 		<div>
-			<h2>Título 02</h2>
+			<h2 class="estilo_texto01">Título 02</h2>
 			
 			<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			
@@ -69,9 +88,9 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 		</div>
 		
 		<div>
-			<h3 id="star wars">Título 03</h3>
+			<h3 id="star-wars">Título 03</h3>
 			
-			<p><u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span style="text-decoration: underline; font-weight: bold; font-style: italic;">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span style="color:red;">Duis aute irure dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p class="estilo_texto01"><u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span style="text-decoration: underline; font-weight: bold; font-style: italic;">Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span style="color:red;">Duis aute irure dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			
 			<a href="#secao01"><img src="image/sw.png" title="Star Wars" alt="Imagem ilustrativa da logo de Star Wars"></a>
 			
@@ -232,6 +251,38 @@ Aula18 Font, Color, Text-align, Text-transform, Text-decoration
 				text-indent: 50px; 											-> Identação de texto; podemos usar tamanhos relativos [%, rem, em (usados em design responsivos) large] e unidades fixas (px, pt, cm; mais usada é o px). Nºs positivos add espaços à esquerda do texto, nºs negativos add espaços à direita
 			}
 
+Aula19 Seletores CSS parte 01
+				1º Seletor por tipo (nome da tag) -> Pegamos o nome da tag, abrimos e fechamos chaves, e dentro das chaves colocamos as regras para CSS. Exemplo:
+					div{
+						REGRA CSS
+					}
+					h1{
+						REGRA CSS
+					}
+					p{
+						REGRA CSS
+					}
+				
+				2º Seletor Universal -> Serve para eliminar/resetar as regras de CSS padrões do navegador; margin e padding servem para tirar o espaçamento e alinhamento. Exemplo:
+					*{
+						font-size: 12px;
+						margin: 0;
+						padding: 0;
+					}
+				
+				3º Seletor por Identificadores -> Dentro da tag escrevemos: id="NOME_DO_IDENTIFICADOR" -> isso marcará a tag com um nome próprio; e após isso, basta colocar: # mais o nome do identificador com regra css dentro das chaves, por exemplo, o Título 3:
+					#star-wars{
+						font-size: 60px;
+					}
+				Este tipo de seletor é único, podemos criar dois id's de mesmo nome (um p/h1 e outro p/h2 de mesmo nome) porém isso é errado. Não podemos duplicar nomes de id's, pois em CSS, um id é um identificador único na página.
+				
+				4º Seletor por Classe -> Dentro da tag escrevemos: class="NOME_DA_CLASSE" -> o seletor por classe é muito parecido com o seletor por identificador, entretanto, sua diferença está na sintaxe. Exemplo, Título 2:
+					.estilo_texto01{
+						font-size: 40px;
+						color: #FF0000;
+					}
+				Com este seletor podemos usar criar e usar o mesmo nome de classe para tags diferentes, ao contrário do id. Podemos duplicar o seletor class quantas vezes precisarmos. Desta forma não erramos nas regras do CSS.
+				
 		</style>
 	
 	-->
