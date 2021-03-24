@@ -18,7 +18,7 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 
 		<style type="text/css" media="">
 			
-			/* Estilo da Home */
+/*  
 			div{
 				
 				/* background: #FF0000 url(image/sw.png) no-repeat 50% 30px; */
@@ -30,15 +30,15 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 				font-variant: small-caps;
 				line-height: 60px;
 				font: 20px Montserrat, Constantia, sans-serif;
-				*/
-/*
+				
+
 				font: bold italic  20px/60px Montserrat, Constantia, sans-serif;
 				color: #FF0000;
 				text-align: justify;
 				text-transform: capitalize;
 				text-decoration: underline line-through overline;
 				text-indent: 50px;
-*/
+
 			}
 			
 			*{
@@ -46,7 +46,7 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 				margin: 0;
 				padding: 0;
 			}
-			
+*/			
 			#star-wars{
 				font-size: 60px;
 			}
@@ -55,15 +55,47 @@ ESTILO USADO NO COMEÇO DA AULA 14 PARA DEMONSTRAÇÃO
 				font-size: 40px;
 				color: #FF0000;
 			}
+			
+			div h1{
+				color: red;
+				font-size: 4em;
+			}
+			
+			div > span{
+				color: blue;
+				font-size: 4em;
+			}
+			
+			h1+h2{
+				color: green;
+				font-size: 4em;
+			}
+			
+			h1~h2{
+				color: green;
+				font-size: 4em;
+			}
+			
 		</style>
 
 	</head>
 	<body>
 		
+<!--		<h1>Título 01</h1>  -->
+			
+			<h2>Título 04</h2>
+		
 		<div>
-			<h1 id="secao01">Título 01</h1>
+		
+			<span>Filho</span>
+		
+			<h1 id="secao01">Título <span>01</span></h1>
+			
+			<h2>Título 02</h2>
+			
+			<h2>Título 03</h2>
 									
-			<p><strong>LOREM IPSUM DOLOR SIT AMET</strong>, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <a href="https://www.youtube.com/watch?v=mMx7a47w6Ok&list=PLwgL9IEA0PxUjbhob9UMdpVq12sGrjgU6&index=11&t=6s" style="color=#FF0000; font-weight: bold;">link</a> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p><strong>LOREM IPSUM DOLOR SIT AMET</strong>, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <a href="https://www.youtube.com/watch?v=mMx7a47w6Ok&list=PLwgL9IEA0PxUjbhob9UMdpVq12sGrjgU6&index=11&t=6s" style="color=#FF0000; font-weight: bold;">link</a> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			
 			<ol>
 				<li><a href="pagina02.html" title="Clique aqui neste link" target="_blank">Item 01 de link</a></li>
@@ -282,7 +314,44 @@ Aula19 Seletores CSS parte 01
 						color: #FF0000;
 					}
 				Com este seletor podemos usar criar e usar o mesmo nome de classe para tags diferentes, ao contrário do id. Podemos duplicar o seletor class quantas vezes precisarmos. Desta forma não erramos nas regras do CSS.
+
+Aula20 Seletores CSS parte 02 - Herança			
+				5º Seletor por Herança -> Digamos que temos dois h1, o 1º fora de uma div e o 2º dentro, queremos alterar somente o 2º. Neste caso usamos a herança. Por exemplo:
+					div h1 {
+						'ALTERAÇÕES 1'
+					}
+				Note 'div' antes de 'h1', isso quer dizer que todo h1 que for ancestral de div terá essas alterações. Logo, podemos estender essa regra; digamos que no 2º h1 há também um span:
+					<div>
+						<h1 id="secao01">Título <span>01</span></h1>
+				Logo:
+					div h1 span{
+						'ALTERAÇÕES 2'
+					}
+				Isso quer toda span ancestral de h1 que é ancestral de div terá aquela alteração. 
+				E isto pode seguir, alocando sempre mais elementos seguindo a ancestralidade, a herança.
+				BOAS PRÁTICAS: até 3 é um nº suficiente.
 				
+				6º Seletor por Filho -> Digamos que temos vários span, um em div, outro em div->h1 e outro em div->h1->'dentro do texto'. Logo, se usarmos o sistema acima (5º seletor):
+					div span{
+						'ALTERAÇÕES 2'
+					}
+				todos os span serão alterados, pois todos tem ancestralidade/herança com div. Mas não queremos que todos sejam alterados, queremos somente o filho de div, o parente imediato a div, então usamos:
+					div > span{
+						'ALTERAÇÕES 2'
+					}
+				Note o '>', ele indica que queremos somente os filhos de div, ou seja, o parente imediato de div. No caso, somente o span que está imediatamente após div será alterado.
+				
+				7º Seletor por Irmãos adjacentes (seletor adjacente) -> Digamos que temos um h1 e dois h2 dentro de div, logo são 3 irmãos dentro da div, e queremos somente alterar o h1 e o 1º h2, pra isso:
+					h1+h2{
+						'ALTERAÇÕES'
+					}
+				(Note h1 + h2) Logo ele só alterará as tags adjacentes entre si. Ou seja, h1 e o 1º h2, o 2º h2 não será alterado.
+				
+				8º Seletor por todos Irmãos -> No mesmo caso citado acima (7º Seletor), podemos usar:
+					h1~h2{
+						'ALTERAÇÕES'
+					}
+				(Note h1 ~ h2) Logo ele alterará todos os irmãos. Logo, se tivermos um h2 fora da div, ele não será alterado.
 		</style>
 	
 	-->
